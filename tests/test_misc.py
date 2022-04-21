@@ -5,8 +5,8 @@ from pathlib import Path
 from pytest import raises, mark, fixture
 from pytest_asyncio import fixture as async_fixture
 from solana.rpc.types import MemcmpOpts
-from anchorpy import Program, Context
-from anchorpy.error import ProgramError
+from chainlink_anchorpy import Program, Context
+from chainlink_anchorpy.error import ProgramError
 from solana.keypair import Keypair
 from solana.publickey import PublicKey
 from solana.sysvar import SYSVAR_RENT_PUBKEY
@@ -14,11 +14,11 @@ from solana.system_program import SYS_PROGRAM_ID, transfer, TransferParams
 from solana.rpc.core import RPCException
 from spl.token.constants import TOKEN_PROGRAM_ID
 from spl.token.async_client import AsyncToken
-from anchorpy.provider import Provider, Wallet
-from anchorpy.utils.rpc import invoke
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.workspace import WorkspaceType
-from anchorpy.idl import _IdlConstant
+from chainlink_anchorpy.provider import Provider, Wallet
+from chainlink_anchorpy.utils.rpc import invoke
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy.idl import _IdlConstant
 
 PATH = Path("anchor/tests/misc/")
 workspace = workspace_fixture(PATH)

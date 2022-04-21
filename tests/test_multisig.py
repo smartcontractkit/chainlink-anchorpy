@@ -8,9 +8,9 @@ from solana.publickey import PublicKey
 from solana.sysvar import SYSVAR_RENT_PUBKEY
 from solana.transaction import AccountMeta
 
-from anchorpy import Program, Context, Provider
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy import Program, Context, Provider
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.workspace import WorkspaceType
 
 
 CreatedMultisig = tuple[Keypair, int, list[PublicKey], int, PublicKey, Keypair, Keypair]

@@ -2,7 +2,7 @@ import subprocess
 
 from pytest import fixture
 
-from anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
 
 workspace = workspace_fixture("anchor/tests/cfo")
 

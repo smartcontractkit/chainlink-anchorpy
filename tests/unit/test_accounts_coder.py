@@ -2,7 +2,7 @@ import json
 from pytest import mark
 from pathlib import Path
 
-from anchorpy import AccountsCoder, Idl
+from chainlink_anchorpy import AccountsCoder, Idl
 
 
 @mark.unit

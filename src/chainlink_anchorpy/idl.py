@@ -8,7 +8,7 @@ from pyheck import snake, upper_camel
 from borsh_construct import CStruct, Vec, U8
 import solana.publickey  # noqa: WPS301
 
-from anchorpy.borsh_extension import _BorshPubkey
+from chainlink_anchorpy.borsh_extension import _BorshPubkey
 
 _LiteralStrings = Literal[
     "bool",

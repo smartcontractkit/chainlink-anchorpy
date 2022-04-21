@@ -1,5 +1,5 @@
 """Various utility functions."""
-from anchorpy.utils import rpc
-from anchorpy.utils import token
+from chainlink_anchorpy.utils import rpc
+from chainlink_anchorpy.utils import token
 
 __all__ = ["rpc", "token"]

@@ -7,8 +7,8 @@ from solana.rpc.types import TxOpts
 from solana.transaction import AccountMeta
 from solana.transaction import TransactionInstruction
 
-from anchorpy.idl import _IdlInstruction
-from anchorpy.error import ArgsError
+from chainlink_anchorpy.idl import _IdlInstruction
+from chainlink_anchorpy.error import ArgsError
 
 
 # should be Dict[str, Union[PublicKey, Accounts]]

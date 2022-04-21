@@ -27,8 +27,8 @@ from borsh_construct import (
     Option,
 )
 
-from anchorpy.borsh_extension import _BorshPubkey, _DataclassStruct
-from anchorpy.idl import (
+from chainlink_anchorpy.borsh_extension import _BorshPubkey, _DataclassStruct
+from chainlink_anchorpy.idl import (
     _IdlEnumFieldsNamed,
     _IdlEnumFieldsTuple,
     _IdlField,

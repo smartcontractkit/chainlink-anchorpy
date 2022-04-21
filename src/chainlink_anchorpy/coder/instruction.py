@@ -5,10 +5,10 @@ from borsh_construct import CStruct
 from construct import Sequence, Bytes
 from construct import Construct, Adapter, Switch, Container
 
-from anchorpy.coder.common import _sighash
-from anchorpy.program.common import Instruction
-from anchorpy.coder.idl import _field_layout
-from anchorpy.idl import Idl, _IdlTypeDef
+from chainlink_anchorpy.coder.common import _sighash
+from chainlink_anchorpy.program.common import Instruction
+from chainlink_anchorpy.coder.idl import _field_layout
+from chainlink_anchorpy.idl import Idl, _IdlTypeDef
 
 
 class _Sighash(Adapter):

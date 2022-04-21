@@ -3,15 +3,15 @@ from dataclasses import dataclass
 from base64 import b64decode
 from pytest import mark, fixture
 from construct import Int32sl, Int64ul
-from anchorpy import Program, Context
+from chainlink_anchorpy import Program, Context
 from solana.keypair import Keypair
 from solana.publickey import PublicKey
 from solana.system_program import (
     create_account,
     CreateAccountParams,
 )
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.workspace import WorkspaceType
 
 
 workspace = workspace_fixture("anchor/tests/pyth/")

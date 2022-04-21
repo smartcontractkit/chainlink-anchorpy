@@ -3,9 +3,9 @@ from typing import Optional, Union, cast, Dict
 import json
 from pathlib import Path
 from solana.publickey import PublicKey
-from anchorpy.program.core import Program
-from anchorpy.provider import Provider
-from anchorpy.idl import Idl, _Metadata
+from chainlink_anchorpy.program.core import Program
+from chainlink_anchorpy.provider import Provider
+from chainlink_anchorpy.idl import Idl, _Metadata
 
 WorkspaceType = Dict[str, Program]
 

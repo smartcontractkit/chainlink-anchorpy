@@ -7,14 +7,14 @@ from solana.keypair import Keypair
 from spl.token.constants import TOKEN_PROGRAM_ID
 from spl.token.async_client import AsyncToken
 
-from anchorpy import (
+from chainlink_anchorpy import (
     Program,
     Context,
     Provider,
     WorkspaceType,
     workspace_fixture,
 )
-from anchorpy.error import ProgramError
+from chainlink_anchorpy.error import ProgramError
 
 
 workspace = workspace_fixture("anchor/tests/system-accounts")

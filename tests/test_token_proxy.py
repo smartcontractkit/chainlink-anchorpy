@@ -11,10 +11,10 @@ from spl.token.instructions import (
 )
 from spl.token.constants import TOKEN_PROGRAM_ID
 
-from anchorpy import Program, Context, Provider
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.utils.token import get_mint_info, get_token_account, create_token_account
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy import Program, Context, Provider
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.utils.token import get_mint_info, get_token_account, create_token_account
+from chainlink_anchorpy.workspace import WorkspaceType
 
 
 workspace = workspace_fixture("anchor/tests/spl/token-proxy/")

@@ -4,9 +4,9 @@ from pytest_asyncio import fixture as async_fixture
 from solana.keypair import Keypair
 from solana.sysvar import SYSVAR_RENT_PUBKEY
 
-from anchorpy import Program, Context
-from anchorpy.workspace import WorkspaceType
-from anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy import Program, Context
+from chainlink_anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
 
 
 workspace = workspace_fixture("anchor/tests/composite/")

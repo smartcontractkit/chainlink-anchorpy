@@ -4,12 +4,12 @@ from typing import Dict, Any, Union, cast, get_args, Tuple, NamedTuple
 from construct import Container
 
 from solana.publickey import PublicKey
-from anchorpy.idl import (
+from chainlink_anchorpy.idl import (
     _IdlAccounts,
     _IdlInstruction,
     _IdlAccountItem,
 )
-from anchorpy.program.context import Accounts
+from chainlink_anchorpy.program.context import Accounts
 
 AddressType = Union[PublicKey, str]
 

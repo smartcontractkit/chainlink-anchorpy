@@ -2,9 +2,9 @@ from pytest import fixture
 from spl.token.async_client import AsyncToken
 from spl.token.constants import TOKEN_PROGRAM_ID
 
-from anchorpy import Program, Provider
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy import Program, Provider
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.workspace import WorkspaceType
 
 workspace = workspace_fixture("anchor/tests/composite/")
 

@@ -3,8 +3,8 @@ from pathlib import Path
 
 from pytest import mark
 
-from anchorpy import create_workspace
-from anchorpy.pytest_plugin import localnet_fixture
+from chainlink_anchorpy import create_workspace
+from chainlink_anchorpy.pytest_plugin import localnet_fixture
 
 PATH = Path("anchor/examples/tutorial/basic-0")
 

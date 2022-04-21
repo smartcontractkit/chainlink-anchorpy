@@ -8,15 +8,15 @@ from solana.publickey import PublicKey
 from solana.sysvar import SYSVAR_RENT_PUBKEY
 from spl.token.constants import TOKEN_PROGRAM_ID
 
-from anchorpy import Program, Context, Provider
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.utils.token import (
+from chainlink_anchorpy import Program, Context, Provider
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.utils.token import (
     create_mint_and_vault,
     get_token_account,
     create_token_account,
     create_token_account_instrs,
 )
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy.workspace import WorkspaceType
 
 
 workspace = workspace_fixture("anchor/tests/cashiers-check")

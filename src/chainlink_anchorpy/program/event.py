@@ -4,8 +4,8 @@ from base64 import b64decode
 from typing import Callable, List, Optional, cast
 import binascii
 from solana.publickey import PublicKey
-from anchorpy.coder.coder import Coder
-from anchorpy.program.common import Event
+from chainlink_anchorpy.coder.coder import Coder
+from chainlink_anchorpy.program.common import Event
 
 PROGRAM_LOG = "Program log: "
 PROGRAM_DATA = "Program data: "

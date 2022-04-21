@@ -6,9 +6,9 @@ from pytest_asyncio import fixture as async_fixture
 from solana.keypair import Keypair
 from solana.system_program import SYS_PROGRAM_ID
 
-from anchorpy import Provider, Context
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy import Provider, Context
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.workspace import WorkspaceType
 
 
 workspace = workspace_fixture("anchor/examples/tutorial/basic-3")

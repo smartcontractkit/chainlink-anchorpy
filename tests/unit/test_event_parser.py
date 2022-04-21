@@ -1,6 +1,6 @@
 from pathlib import Path
 import json
-from anchorpy import EventParser, Idl, Program, Event
+from chainlink_anchorpy import EventParser, Idl, Program, Event
 from solana.publickey import PublicKey
 
 

@@ -9,10 +9,10 @@ from spl.token.constants import TOKEN_PROGRAM_ID
 
 from pytest import fixture, mark
 from pytest_asyncio import fixture as async_fixture
-from anchorpy import Program, Provider
-from anchorpy.program.context import Context
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy import Program, Provider
+from chainlink_anchorpy.program.context import Context
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.workspace import WorkspaceType
 
 INITIALIZER_AMOUNT = 500
 TAKER_AMOUNT = 1000

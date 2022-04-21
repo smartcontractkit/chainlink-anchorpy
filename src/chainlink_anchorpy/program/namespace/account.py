@@ -12,16 +12,16 @@ from solana.publickey import PublicKey
 from solana.rpc.types import MemcmpOpts
 from solana.rpc.commitment import Commitment
 
-from anchorpy.coder.common import _account_size
-from anchorpy.coder.accounts import (
+from chainlink_anchorpy.coder.common import _account_size
+from chainlink_anchorpy.coder.accounts import (
     ACCOUNT_DISCRIMINATOR_SIZE,
     _account_discriminator,
 )
-from anchorpy.coder.coder import Coder
-from anchorpy.error import AccountDoesNotExistError, AccountInvalidDiscriminator
-from anchorpy.idl import Idl, _IdlAccountDef
-from anchorpy.provider import Provider
-from anchorpy.utils.rpc import get_multiple_accounts
+from chainlink_anchorpy.coder.coder import Coder
+from chainlink_anchorpy.error import AccountDoesNotExistError, AccountInvalidDiscriminator
+from chainlink_anchorpy.idl import Idl, _IdlAccountDef
+from chainlink_anchorpy.provider import Provider
+from chainlink_anchorpy.utils.rpc import get_multiple_accounts
 
 
 def _build_account(

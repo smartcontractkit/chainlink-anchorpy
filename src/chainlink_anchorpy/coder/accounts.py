@@ -3,9 +3,9 @@ from hashlib import sha256
 from typing import Tuple, Any
 from construct import Adapter, Sequence, Bytes, Switch, Container
 
-from anchorpy.coder.idl import _typedef_layout
-from anchorpy.idl import Idl
-from anchorpy.program.common import Instruction as AccountToSerialize
+from chainlink_anchorpy.coder.idl import _typedef_layout
+from chainlink_anchorpy.idl import Idl
+from chainlink_anchorpy.program.common import Instruction as AccountToSerialize
 
 ACCOUNT_DISCRIMINATOR_SIZE = 8  # bytes
 

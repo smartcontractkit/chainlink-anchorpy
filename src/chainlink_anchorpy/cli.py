@@ -4,8 +4,8 @@ from pathlib import Path
 from contextlib import contextmanager
 import typer
 from IPython import embed
-from anchorpy import create_workspace
-from anchorpy.template import INIT_TESTS
+from chainlink_anchorpy import create_workspace
+from chainlink_anchorpy.template import INIT_TESTS
 
 app = typer.Typer()
 

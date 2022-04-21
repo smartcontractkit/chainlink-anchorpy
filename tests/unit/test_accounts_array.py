@@ -1,11 +1,11 @@
-from anchorpy import Idl
+from chainlink_anchorpy import Idl
 from pathlib import Path
 from pytest import mark
 import json
 from solana.keypair import Keypair
 from solana.transaction import AccountMeta
 
-from anchorpy.program.namespace.instruction import _accounts_array
+from chainlink_anchorpy.program.namespace.instruction import _accounts_array
 
 
 @mark.unit

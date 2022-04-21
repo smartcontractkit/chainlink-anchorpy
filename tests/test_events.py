@@ -7,12 +7,12 @@ from pytest import mark, fixture
 from solana.rpc.websocket_api import connect, SolanaWsClientProtocol
 from solana.rpc.request_builder import LogsSubscribeFilter
 from solana.rpc.responses import LogsNotification
-from anchorpy import (
+from chainlink_anchorpy import (
     Program,
     EventParser,
 )
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.workspace import WorkspaceType
 
 
 workspace = workspace_fixture("anchor/tests/events/")

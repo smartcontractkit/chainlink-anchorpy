@@ -8,8 +8,8 @@ from solana.publickey import PublicKey
 from solana.sysvar import SYSVAR_RENT_PUBKEY
 from solana.system_program import SYS_PROGRAM_ID
 
-from anchorpy import Program, Context, Provider
-from anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy import Program, Context, Provider
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
 
 
 workspace = workspace_fixture("anchor/tests/chat/")

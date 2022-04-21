@@ -6,8 +6,8 @@ from typer.testing import CliRunner
 from solana.rpc.api import Client
 from solana.rpc.commitment import Processed
 
-from anchorpy import localnet_fixture
-from anchorpy.cli import app
+from chainlink_anchorpy import localnet_fixture
+from chainlink_anchorpy.cli import app
 
 PATH = Path("anchor/examples/tutorial/basic-0")
 

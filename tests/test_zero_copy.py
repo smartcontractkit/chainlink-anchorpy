@@ -9,13 +9,13 @@ from solana.sysvar import SYSVAR_RENT_PUBKEY
 from solana.system_program import SYS_PROGRAM_ID
 from solana.rpc.core import RPCException
 
-from anchorpy import (
+from chainlink_anchorpy import (
     Program,
     Context,
     Provider,
 )
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.workspace import WorkspaceType
 
 PATH = Path("anchor/tests/zero-copy")
 DEFAULT_PUBKEY = PublicKey("11111111111111111111111111111111")

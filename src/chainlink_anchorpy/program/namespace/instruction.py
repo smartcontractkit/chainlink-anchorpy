@@ -4,19 +4,19 @@ from typing import Callable, Any, Sequence, cast, Tuple
 from solana.transaction import TransactionInstruction, AccountMeta
 from solana.publickey import PublicKey
 
-from anchorpy.program.common import (  # noqa: WPS347
+from chainlink_anchorpy.program.common import (  # noqa: WPS347
     _to_instruction,
     validate_accounts,
     translate_address,
     Instruction,
 )
-from anchorpy.program.context import (
+from chainlink_anchorpy.program.context import (
     EMPTY_CONTEXT,
     Context,
     _check_args_length,
     Accounts,
 )
-from anchorpy.idl import _IdlInstruction, _IdlAccountItem, _IdlAccounts, _IdlAccount
+from chainlink_anchorpy.idl import _IdlInstruction, _IdlAccountItem, _IdlAccounts, _IdlAccount
 
 
 class _InstructionFn:

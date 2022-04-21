@@ -5,30 +5,30 @@ from base64 import b64decode
 import zlib
 import json
 
-from anchorpy.coder.coder import Coder
-from anchorpy.coder.accounts import ACCOUNT_DISCRIMINATOR_SIZE
-from anchorpy.program.common import AddressType, translate_address
-from anchorpy.idl import Idl, _decode_idl_account, _idl_address
+from chainlink_anchorpy.coder.coder import Coder
+from chainlink_anchorpy.coder.accounts import ACCOUNT_DISCRIMINATOR_SIZE
+from chainlink_anchorpy.program.common import AddressType, translate_address
+from chainlink_anchorpy.idl import Idl, _decode_idl_account, _idl_address
 from solana.publickey import PublicKey
-from anchorpy.provider import Provider
-from anchorpy.program.namespace.rpc import (
+from chainlink_anchorpy.provider import Provider
+from chainlink_anchorpy.program.namespace.rpc import (
     _RpcFn,
     _build_rpc_item,
 )
-from anchorpy.program.namespace.transaction import (
+from chainlink_anchorpy.program.namespace.transaction import (
     _TransactionFn,
     _build_transaction_fn,
 )
-from anchorpy.program.namespace.instruction import (
+from chainlink_anchorpy.program.namespace.instruction import (
     _InstructionFn,
 )
-from anchorpy.program.namespace.account import AccountClient, _build_account
-from anchorpy.program.namespace.simulate import (
+from chainlink_anchorpy.program.namespace.account import AccountClient, _build_account
+from chainlink_anchorpy.program.namespace.simulate import (
     _SimulateFn,
     _build_simulate_item,
 )
-from anchorpy.program.namespace.types import _build_types
-from anchorpy.error import IdlNotFoundError
+from chainlink_anchorpy.program.namespace.types import _build_types
+from chainlink_anchorpy.error import IdlNotFoundError
 
 
 def _parse_idl_errors(idl: Idl) -> dict[int, str]:

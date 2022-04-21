@@ -32,13 +32,13 @@ from pyserum.open_orders_account import make_create_account_instruction
 from pyserum.market import AsyncMarket
 from pyserum._layouts.market import MARKET_LAYOUT
 from pyserum._layouts.open_orders import OPEN_ORDERS_LAYOUT
-from anchorpy.program.context import Context
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.utils.token import create_mint_and_vault, get_token_account
+from chainlink_anchorpy.program.context import Context
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.utils.token import create_mint_and_vault, get_token_account
 from pyserum.enums import Side, OrderType
-from anchorpy.provider import DEFAULT_OPTIONS, Provider, Wallet
-from anchorpy import Program
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy.provider import DEFAULT_OPTIONS, Provider, Wallet
+from chainlink_anchorpy import Program
+from chainlink_anchorpy.workspace import WorkspaceType
 
 DEX_PID = PublicKey("9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin")
 

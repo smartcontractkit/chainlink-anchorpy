@@ -1,21 +1,21 @@
 """The Python Anchor client."""
-from anchorpy.provider import Provider, Wallet, SendTxRequest
-from anchorpy.coder.coder import Coder, InstructionCoder, EventCoder, AccountsCoder
-from anchorpy.idl import Idl, IdlProgramAccount
-from anchorpy.workspace import create_workspace, close_workspace, WorkspaceType
-from anchorpy.program.core import Program
-from anchorpy.program.common import (
+from chainlink_anchorpy.provider import Provider, Wallet, SendTxRequest
+from chainlink_anchorpy.coder.coder import Coder, InstructionCoder, EventCoder, AccountsCoder
+from chainlink_anchorpy.idl import Idl, IdlProgramAccount
+from chainlink_anchorpy.workspace import create_workspace, close_workspace, WorkspaceType
+from chainlink_anchorpy.program.core import Program
+from chainlink_anchorpy.program.common import (
     Event,
     Instruction,
     translate_address,
     validate_accounts,
 )
-from anchorpy.program.context import Context
-from anchorpy.program.namespace.account import AccountClient, ProgramAccount
-from anchorpy.program.event import EventParser
-from anchorpy.program.namespace.simulate import SimulateResponse
-from anchorpy.pytest_plugin import localnet_fixture, workspace_fixture
-from anchorpy import error, utils
+from chainlink_anchorpy.program.context import Context
+from chainlink_anchorpy.program.namespace.account import AccountClient, ProgramAccount
+from chainlink_anchorpy.program.event import EventParser
+from chainlink_anchorpy.program.namespace.simulate import SimulateResponse
+from chainlink_anchorpy.pytest_plugin import localnet_fixture, workspace_fixture
+from chainlink_anchorpy import error, utils
 
 __all__ = [
     "Program",

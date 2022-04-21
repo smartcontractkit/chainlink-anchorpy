@@ -8,9 +8,9 @@ from solana.sysvar import (
     SYSVAR_STAKE_HISTORY_PUBKEY,
 )
 
-from anchorpy.program.context import Context
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy.program.context import Context
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.workspace import WorkspaceType
 
 PATH = Path("anchor/tests/sysvars")
 

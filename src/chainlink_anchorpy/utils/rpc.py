@@ -16,8 +16,8 @@ from solana.transaction import (
 )
 import zstandard
 import jsonrpcclient
-from anchorpy.program.common import AddressType, translate_address
-from anchorpy.provider import Provider
+from chainlink_anchorpy.program.common import AddressType, translate_address
+from chainlink_anchorpy.provider import Provider
 
 _GET_MULTIPLE_ACCOUNTS_LIMIT = 100
 _MAX_ACCOUNT_SIZE = 10 * 1048576

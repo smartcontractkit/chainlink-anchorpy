@@ -1,13 +1,13 @@
 """Mimics anchor/tests/errors/tests/errors.js."""
 from pytest import raises, mark, fixture
-from anchorpy import Program, Context
-from anchorpy.error import ProgramError
+from chainlink_anchorpy import Program, Context
+from chainlink_anchorpy.error import ProgramError
 from solana.keypair import Keypair
 from solana.sysvar import SYSVAR_RENT_PUBKEY
 from solana.transaction import AccountMeta, Transaction, TransactionInstruction
 from solana.rpc.core import RPCException
-from anchorpy.pytest_plugin import workspace_fixture
-from anchorpy.workspace import WorkspaceType
+from chainlink_anchorpy.pytest_plugin import workspace_fixture
+from chainlink_anchorpy.workspace import WorkspaceType
 
 
 workspace = workspace_fixture("anchor/tests/errors/")

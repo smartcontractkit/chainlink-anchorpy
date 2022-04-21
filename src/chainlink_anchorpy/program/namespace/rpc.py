@@ -3,12 +3,12 @@ from typing import Any, Awaitable, Dict, Protocol
 from solana.rpc.core import RPCException
 
 from solana.transaction import TransactionSignature
-from anchorpy.error import ProgramError
+from chainlink_anchorpy.error import ProgramError
 
-from anchorpy.program.context import EMPTY_CONTEXT, Context, _check_args_length
-from anchorpy.idl import _IdlInstruction
-from anchorpy.provider import Provider
-from anchorpy.program.namespace.transaction import _TransactionFn
+from chainlink_anchorpy.program.context import EMPTY_CONTEXT, Context, _check_args_length
+from chainlink_anchorpy.idl import _IdlInstruction
+from chainlink_anchorpy.provider import Provider
+from chainlink_anchorpy.program.namespace.transaction import _TransactionFn
 
 
 class _RpcFn(Protocol):

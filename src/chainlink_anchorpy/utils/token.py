@@ -18,7 +18,7 @@ from spl.token.instructions import (
 from spl.token.async_client import AsyncToken
 from spl.token.core import AccountInfo, MintInfo
 from spl.token._layouts import ACCOUNT_LAYOUT, MINT_LAYOUT
-from anchorpy import Provider
+from chainlink_anchorpy import Provider
 
 
 async def create_token_account(

@@ -3,10 +3,10 @@ from hashlib import sha256
 from typing import Dict, Tuple, Any, Optional
 
 from construct import Adapter, Construct, Sequence, Bytes, Switch
-from anchorpy.idl import Idl, _IdlEvent, _IdlField, _IdlTypeDef, _IdlTypeDefTyStruct
+from chainlink_anchorpy.idl import Idl, _IdlEvent, _IdlField, _IdlTypeDef, _IdlTypeDefTyStruct
 
-from anchorpy.program.common import Event
-from anchorpy.coder.idl import _typedef_layout
+from chainlink_anchorpy.program.common import Event
+from chainlink_anchorpy.coder.idl import _typedef_layout
 
 
 def _event_discriminator(name: str) -> bytes:

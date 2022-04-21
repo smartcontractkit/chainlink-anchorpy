@@ -4,13 +4,13 @@ from typing import Dict, Any, NamedTuple, Union, cast, Protocol, Awaitable
 from solana.rpc.types import RPCError
 
 
-from anchorpy.coder.coder import Coder
-from anchorpy.error import _ExtendedRPCError, ProgramError
-from anchorpy.idl import _IdlInstruction, Idl
-from anchorpy.program.event import EventParser, Event
-from anchorpy.program.namespace.transaction import _TransactionFn
-from anchorpy.provider import Provider
-from anchorpy.program.context import EMPTY_CONTEXT, Context, _check_args_length
+from chainlink_anchorpy.coder.coder import Coder
+from chainlink_anchorpy.error import _ExtendedRPCError, ProgramError
+from chainlink_anchorpy.idl import _IdlInstruction, Idl
+from chainlink_anchorpy.program.event import EventParser, Event
+from chainlink_anchorpy.program.namespace.transaction import _TransactionFn
+from chainlink_anchorpy.provider import Provider
+from chainlink_anchorpy.program.context import EMPTY_CONTEXT, Context, _check_args_length
 from solana.publickey import PublicKey
 from solana.rpc.core import RPCException
 

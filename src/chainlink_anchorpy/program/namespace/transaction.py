@@ -3,9 +3,9 @@ from typing import Any, Protocol
 
 from solana.transaction import Transaction
 
-from anchorpy.program.context import EMPTY_CONTEXT, Context, _check_args_length
-from anchorpy.idl import _IdlInstruction
-from anchorpy.program.namespace.instruction import _InstructionFn
+from chainlink_anchorpy.program.context import EMPTY_CONTEXT, Context, _check_args_length
+from chainlink_anchorpy.idl import _IdlInstruction
+from chainlink_anchorpy.program.namespace.instruction import _InstructionFn
 
 
 class _TransactionFn(Protocol):
