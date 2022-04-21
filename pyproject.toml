@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "anchorpy"
-version = "0.8.2"
+name = "chainlink-anchorpy"
+version = "0.1.0"
 description = "The Python Anchor client."
 readme = "README.md"
 repository = "https://github.com/kevinheavey/anchorpy"
@@ -31,7 +31,7 @@ cli = ["typer", "ipython"]
 
 
 [tool.poetry.scripts]
-anchorpy = "anchorpy.cli:app"
+chainlink_anchorpy = "chainlink_anchorpy.cli:app"
 
 [tool.poetry.dev-dependencies]
 wemake-python-styleguide = "^0.15.3"
@@ -46,7 +46,7 @@ mkdocstrings = "^0.17.0"
 bandit = "1.7.2"
 
 [tool.poetry.plugins.pytest11]
-pytest_anchorpy = "anchorpy.pytest_plugin"
+pytest_chainlink_anchorpy = "chainlink_anchorpy.pytest_plugin"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
